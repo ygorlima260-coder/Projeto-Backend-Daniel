@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AlfaBrasil</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@6.4.3"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vega-embed@7.1.0"></script>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      AlfaBrasil
+    </div>
+   
+    <nav>
+    
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+
+  </header>
+  <main id="inicio">
+    <section class="hero">
+      <h1>Alfabetização no Brasil </h1>
+
+      <p>
+        Este documento foi construído para apresentar os resultados da triagem e estruturação de dados de geolocalização e administração escolar no Brasil. O fluxo de trabalho consistiu em:
+<br>
+Tratamento: Limpeza e agregação dos dados brutos utilizando a biblioteca Pandas.
+<br>
+Armazenamento: Hospedagem do arquivo final estruturado em um repositório no GitHub.
+<br>
+Visualização: Consumo do arquivo via requisição e renderização dos gráficos interativos aqui no Observable.
+<br>
+Abaixo, detalhamos a estrutura do arquivo de dados utilizado como base para todas as visualizações deste notebook.
+<br>
+O objetivo principal é entender como as escolas se distribuem entre as zonas urbanas e rurais, além de mapear a presença das redes estadual, federal, municipal e privada ao longo das cinco regiões do país. 
+<br>
+Abaixo, detalhamos a estrutura do arquivo de dados utilizado como base para todas as visualizações deste notebook.
+<a href="https://github.com/thiagodemelofarias-spec/Projeto-Backend-Daniel" target="_blank">Repositório no GitHub</a>
+<br>
+Localidade da Escola: Indica a localização geográfica do dado, representando o total do Brasil ou uma das cinco macroregiões do país.
+<br>
+Escolas: A quantidades de instituições de ensino, baseado em uma determinada categoria
+<br>
+Categoria 1: Classificação geográfica da localização da escola, dividida entre as zonas rural e urbana.
+<br>
+Categoria 2: Dependência administrativa ou setor responsável pela gestão da instituição de ensino.
+      </p>
+
+      <a href="index.html" class="btn">Voltar</a>
+    </section>
+   
+
+  </main>
+ 
+  <footer id="contato">
+    <p>
+      &copy; 2026 AlfaBrasil &mdash;
+      <a href="#">Política de Privacidade</a> &middot;
+      <a href="#">Termos de Uso</a>
+    </p>
+
+  </footer>
+</body>
+</html>

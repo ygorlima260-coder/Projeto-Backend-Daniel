@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AlfaBrasil</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/vega@5.30.0"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/vega-embed@6.26.0"></script>
+  
+  <script defer src="Graficos/Distribuicao_do_Numero_de_Escolas_por_Dependencia_Administrativa.js"></script>
+  <script defer src="Graficos/Total_de_Escolas_Rural_vs_Urbana.js"></script>
+  <script defer src="Graficos/Distribuicao_de_Escolas_por_Regiao_e_Dependencia_Administrativa.js"></script>
+  <script defer src="Graficos/Distribuicao_de_Escolas_por_Dependencia_Administrativa.js"></script>
+  <script defer src="Graficos/Peso_Regional_Escolas_Rurais_vs_Urbanas_por_Regiao.js"></script>
+  <script defer src="Graficos/Perfil_de_Dependencia_Administrativa_Rural_vs_Urbana.js"></script>
+  <script defer src="Graficos/Indice_de_Municipalizacao_Rural_por_Regiao.js"></script>
+  <script defer src="Graficos/Anomalia_da_Rede_Federal_Escolas_Rurais_vs_Urbanas_por_Regiao.js"></script>
+  <script defer src="Graficos/Dualidade_de_Gestao_Localizacao_e_Tipo_de_Rede.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="logo">AlfaBrasil</div>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <h1>Alfabetização no Brasil</h1>
+      <p>
+        Este espaço foi criado para mapear a infraestrutura educacional do nosso país, transformando números brutos em respostas visuais. Cruzando dados sobre as cinco macrorregiões brasileiras, os perímetros urbanos e rurais, e as diferentes redes de ensino municipal, estadual, federal e privada, nós desenhamos um retrato de como o sistema educacional se organiza no território nacional.
+      </p>
+      <p>
+        Abaixo, você encontrará gráficos interativos que revelam desde o protagonismo das prefeituras no interior profundo até o comportamento das redes particulares nos grandes centros.
+      </p>
+      <a href="sobre.html" class="btn">Saiba mais</a>
+    </section>
+
+    <section id="meus-graficos" style="max-width: 1000px; margin: 0 auto; padding: 20px;">
+      <h2 id="visualização" style="margin-bottom: 30px;">Visualização dos Dados</h2>
+
+      <div id="Distribuicao_do_Numero_de_Escolas_por_Dependencia_Administrativa" style="width: 100%; margin-bottom: 20px;"></div>
+      <p style="margin-bottom: 50px;">Este gráfico de barras horizontais ilustra a composição do cenário educacional brasileiro, revelando uma clara predominância da esfera municipal, que sustenta o maior volume de unidades escolares (superando a marca de 213 mil estabelecimentos). Em seguida, observa-se a relevância da rede privada e da rede estadual, que compõem o corpo intermediário do sistema. A rede federal, por sua vez, apresenta a menor participação quantitativa, refletindo sua natureza de atuação estratégica e especializada em centros de excelência técnica. Os dados reafirmam o processo de municipalização do ensino, posicionando as prefeituras como os principais agentes na infraestrutura escolar do país.</p>
+
+      <div id="Total_de_Escolas_Rural_vs_Urbana" style="width: 100%; margin-bottom: 20px;"></div>
+      <p style="margin-bottom: 50px;">A comparação entre a quantidade de escolas urbanas e rurais expõe a face geográfica da educação no Brasil. Ao observarmos o ponto que representa as 128 mil escolas urbanas frente às 51 mil escolas rurais, compreendemos que o sistema de ensino está fortemente centralizado nas cidades. Embora essa distribuição siga a lógica da densidade populacional, ela levanta um alerta sobre a disseminação da infraestrutura em áreas afastadas. Este dato é o ponto de partida para entendermos se o sistema de ensino está alcançando as comunidades mais remotas de maneira equilibrada ou se a distância geográfica ainda atua como um limitador do acesso escolar.</p>
+
+      <div id="Distribuicao_de_Escolas_por_Regiao_e_Dependencia_Administrativa" style="width: 100%; margin-bottom: 50px;">
+      </div>
+      <p style="margin-bottom: 50px;">
+       
+        Este é o gráfico mais complexo, pois cruza a localização geográfica com o tipo de administração.
+
+Este gráfico de barras empilhadas oferece uma visão multidimensional da educação no Brasil. Ele permite identificar não apenas quais regiões possuem mais escolas (como o Nordeste e Sudeste, que historicamente apresentam números elevados), mas também como a gestão é dividida dentro de cada território.
+
+É possível notar que, em todas as regiões, a dependência municipal constitui a maior parte da oferta.
+
+A proporção de escolas privadas tende a ser maior em regiões com maior PIB per capita, enquanto o peso das escolas estaduais e municipais é vital em regiões com vasta extensão territorial ou maior vulnerabilidade econômica.
+</p>
+
+
+      <div id="Distribuicao_de_Escolas_por_Dependencia_Administrativa" style="width: 100%; margin-bottom: 50px;"></div>
+    
+
+      <div id="Peso_Regional_Escolas_Rurais_vs_Urbanas_por_Regiao" style="width: 100%; margin-bottom: 50px;"></div>
+
+     <p style = "margin-bottom: 50px;">Esta visualização utiliza uma estrutura de barras espelhadas para confrontar a distribuição de escolas nos ambientes Rural (à esquerda, em verde) e Urbano (à direita, em azul) por cada região brasileira. O gráfico revela uma dinâmica geográfica que desafia a lógica puramente econômica ou demográfica.
+
+Nordeste: O gráfico deixa evidente que o Nordeste detém a maior concentração de escolas rurais do Brasil. Visualmente, a barra verde da região Nordeste é a mais extensa, superando significativamente regiões com maior PIB, como o Sudeste. Enquanto o Sudeste foca sua infraestrutura no ambiente urbano (barra azul dominante), o Nordeste mantém uma rede capilarizada no campo.
+
+Sudeste: Em contrapartida, o Sudeste apresenta o maior volume de escolas urbanas do país, refletindo o alto grau de metropolização e densidade populacional da região.
+
+Norte: Ao observarmos o Norte, notamos uma proporção rural também elevada em relação à sua própria rede urbana, reforçando que, em regiões de vasta extensão territorial ou com histórico de ocupação rural, o sistema de ensino precisa ir até o aluno, independentemente da concentração urbana.</p>
+      <div id="Perfil_de_Dependencia_Administrativa_Rural_vs_Urbana" style="width: 100%; margin-bottom: 50px;"></div>
+
+    <p style = "margin-bottom: 50px;">Esse gráfico divide as colunas em fatias que vão de 0% a 100% para mostrar quem administra as escolas nas zonas Rural e Urbana.
+
+A fatia vermelha (Privada) é gigante, ocupando quase um terço de todo o gráfico. Mas quando você olha para a barra da zona rural, essa mesma cor vermelha praticamente desaparece. Isso prova perfeitamente que as escolas particulares estão mais voltadas as cidades, porém, no interior o mercado privado quase não tem espaço.
+
+Com o tamanho reduzido da rede Estadual, Federal e da rede privada no campo, a fatia azul (Municipal) domina quase a barra inteira. Na prática, isso mostra que o município é o grande responsável pela educação para quem vive mais afastado dos centros urbanos.
+
+Já nas cidades, o cenário é muito mais dividido. O município continua forte, mas divide a responsabilidade quase que igualmente com o Estado (verde) e com as escolas particulares (vermelho).
+
+Enquanto a cidade tem uma rede bem mista, onde o aluno pode escolher entre escola pública ou particular, no campo a prefeitura é quem garante, praticamente sozinha, que a educação aconteça.</p>
+
+      <div id="Indice_de_Municipalizacao_Rural_por_Regiao" style="width: 100%; margin-bottom: 50px;"></div>
+
+      <p style = "margin-bottom: 50px;">Este gráfico mostra a maior dependência que há nas zonas rurais das regiões Norte e Nordeste do país das redes municipais evidenciando a responsabilidade que esta rede tem sobre a educação nas zonas rurais destas regiões.
+
+Os números mostram que o Nordeste e o Norte dependem quase que exclusivamente das prefeituras para manter o ensino no campo. No Nordeste, 93,5% das escolas rurais são geridas pelos municípios, que lideram em volume, enquanto o Norte vem logo atrás, com uma dependência de 87,5%.
+
+Já no Sudeste (83%), Sul (70,7%) e Centro-Oeste (70,4%), esses índices diminuem. Isso indica que, nessas regiões, o peso de gerenciar as escolas rurais é mais dividido com o Estado ou que a demanda por escolas em áreas isoladas é menor.
+
+O gráfico deixa claro que o desafio de financiar e estruturar o ensino em áreas remotas não é igual para todo mundo. As prefeituras do Norte e do Nordeste são as que enfrentam os maiores desafios logísticos para garantir que a educação chegue às comunidades mais afastadas.</p>
+
+      <div id="Anomalia_da_Rede_Federal_Escolas_Rurais_vs_Urbanas_por_Regiao" style="width: 100%; margin-bottom: 50px;"></div>
+      <p style = "margin-bottom: 50px;">Este gráfico de pontos conectados isola apenas as instituições da Rede Federal de ensino para analisar sua distribuição e comparar a presença dessas unidades entre as zonas urbana e rural em cada região do país.
+
+Diferente das esferas municipal e estadual, que gerenciam dezenas de milhares de prédios, o volume de escolas federais é nitidamente baixo em todo o território nacional. A região Nordeste lidera o segmento urbano com 201 unidades, enquanto o Norte possui o menor número em áreas rurais, registrando apenas 11 escolas.
+
+Em todas as cinco regiões, nota-se uma tendência de maior concentração nos centros urbanos (pontos em azul). No entanto, as linhas que conectam os pontos rurais (em verde) aos urbanos evidenciam uma distribuição proporcionalmente equilibrada. Mesmo no Centro-Oeste, onde os números são mais discretos (15 rurais e 53 urbanas), o comportamento da rede segue um padrão constante.</p>
+
+      <div id="Dualidade_de_Gestao_Localizacao_e_Tipo_de_Rede" style="width: 100%; margin-bottom: 50px;"></div>
+      <p style ="margin-bottom: 50px;">Este mapa de calor cruza as variáveis de localização geográfica (Urbana e Rural) com as esferas administrativas responsáveis pelas instituições. A intensidade das cores na matriz indica as faixas de maior e menor concentração de escolas no país, permitindo identificar o foco de atuação de cada rede.
+
+O gráfico evidencia uma divisão de tarefas bem definida no setor público. Enquanto a rede municipal apresenta uma forte saturação na zona rural (representada pelo bloco de cor mais intensa), a rede estadual concentra seus esforços e sua estrutura de forma massiva nos perímetros urbanos.
+
+O quadrante que cruza a zona urbana com a rede municipal aponta o ponto de maior densidade de todo o gráfico. Em contrapartida, o cruzamento entre a zona rural e a rede privada e federal revela uma menor densidade. O bloco praticamente sem intensidade de cor confirma que o setor privado e federal atuam quase que exclusivamente nos centros urbanos, onde há demanda comercial viável.
+
+Fica evidente que o Estado e o Município operam de forma estratégica: as prefeituras assumem a liderança da infraestrutura no campo, enquanto as secretarias estaduais e a iniciativa privada concentram o atendimento onde a densidade populacional das cidades exige maior suporte.</p>
+    </section>
+  </main>
+ 
+  <footer id="contato">
+    <p>
+      &copy; 2026 AlfaBrasil &mdash;
+      <a href="#">Política de Privacidade</a> &middot;
+      <a href="#">Termos de Uso</a>
+    </p>
+  </footer>
+
+  
+</body>
+</html>

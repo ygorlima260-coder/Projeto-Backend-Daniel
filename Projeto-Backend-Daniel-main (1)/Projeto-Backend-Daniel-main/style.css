@@ -1,0 +1,203 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f4f0;
+      color: #2c2c2a;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh; 
+    }
+ 
+    header {
+      background-color: #1a1a18;
+      color: #f5f4f0;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+ 
+    header .logo {
+      font-size: 1.4rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+ 
+    header nav a {
+      color: #c4c2b8;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+ 
+    header nav a:hover {
+      color: #f5f4f0;
+    }
+ 
+  
+    main {
+      flex: 1; 
+      padding: 3rem 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+      width: 100%;
+    }
+ 
+    .hero {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+ 
+    .hero h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      color: #1a1a18;
+    }
+ 
+    .hero p {
+      font-size: 1.05rem;
+      color: #5f5e5a;
+      max-width: 560px;
+      margin: 0 auto 1.5rem;
+      line-height: 1.7;
+    }
+ 
+    .btn {
+      display: inline-block;
+      background-color: #1a1a18;
+      color: #f5f4f0;
+      padding: 0.65rem 1.5rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: background-color 0.2s;
+    }
+ 
+    .btn:hover {
+      background-color: #3c3c38;
+    }
+ 
+    
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.25rem;
+    }
+ 
+    .card {
+      background-color: #ffffff;
+      border: 0.5px solid #d3d1c7;
+      border-radius: 10px;
+      padding: 1.25rem;
+    }
+ 
+    .card h2 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: #1a1a18;
+    }
+ 
+    .card p {
+      font-size: 0.9rem;
+      color: #5f5e5a;
+      line-height: 1.6;
+    }
+ 
+    
+    footer {
+      background-color: #1a1a18;
+      color: #888780;
+      text-align: center;
+      padding: 1.25rem 2rem;
+      font-size: 0.85rem;
+    }
+ 
+    footer a {
+      color: #c4c2b8;
+      text-decoration: none;
+    }
+ 
+    footer a:hover {
+      color: #f5f4f0;
+    }
+    #visualização{
+      text-align:center;
+      margin-bottom:2rem;
+
+    }
+    .equipe-section {
+      max-width: 600px;
+      margin: 80px auto;
+      padding: 48px 40px;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 32px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+ 
+    .equipe-section h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 40px;
+      color: #111;
+      letter-spacing: -0.5px;
+    }
+ 
+    .membro {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      padding: 20px 0;
+      border-bottom: 1px solid #f0f0f0;
+    }
+ 
+    .membro:last-of-type {
+      border-bottom: none;
+    }
+ 
+    .membro p {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #222;
+      margin: 0;
+    }
+ 
+    .membro a {
+      font-size: 0.88rem;
+      color: #2a9d8f;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+ 
+    .membro a:hover {
+      border-color: #2a9d8f;
+    }
+ 
+    .btn-voltar {
+      display: inline-block;
+      margin-top: 36px;
+      padding: 12px 32px;
+      background: #111;
+      color: #fff;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      transition: background 0.2s, transform 0.15s;
+    }
+ 
+    .btn-voltar:hover {
+      background: #2a9d8f;
+      transform: translateY(-1px);
+    }
